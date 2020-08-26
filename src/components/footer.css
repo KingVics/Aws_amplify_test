@@ -1,0 +1,15 @@
+.footer-container {
+    padding-bottom:  0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+    overflow: hidden;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-container p {
+    padding: 0;
+    margin: 0;
+}

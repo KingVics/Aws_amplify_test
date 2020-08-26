@@ -1,17 +1,5 @@
-.style {
-    width: 18rem;
-    float: left;
-    margin: 0 4rem;
-    padding: 0;
-    align-items: center;
-}
 
-.product-container {
-    padding-top: 3rem;
-   
+.card-style {
+    padding-top: 1rem;
+    margin-top: 1rem;
 }
-
-.container-style {
-    background-color: black;
-}
-

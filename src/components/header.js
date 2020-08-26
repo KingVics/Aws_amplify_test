@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './nav'
 import Conditional from './conditional'
+import './header.css'
 
 
 // function Header() {

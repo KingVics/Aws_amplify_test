@@ -64,16 +64,44 @@ click(e) {
 render() {
         
         return (
-               
-            <div  className="card style">
-                <div  className="card-body card">
-                    <h5  className="card-title">{this.props.cardprops.title}</h5>
-                        <p  className="card-text">{this.props.cardprops.para}</p>
-                        <div>{this.state.count}</div>
-                        <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
-                        <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+            <div className="container">  
+                <div className="row card-style">
+                    <div className="col- col-lg-4">
+                         <div  className="card">
+                             <div  className="card-body card">
+                                 <h5  className="card-title">{this.props.cardprops.title}</h5>
+                                  <p  className="card-text">{this.props.cardprops.para}</p>
+                                 <div>{this.state.count}</div>
+                                 <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                                <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className="col- col-lg-4">
+                         <div  className="card">
+                             <div  className="card-body card">
+                                 <h5  className="card-title">{this.props.cardprops.title}</h5>
+                                  <p  className="card-text">{this.props.cardprops.para}</p>
+                                 <div>{this.state.count}</div>
+                                 <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                                <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col- col-lg-4">
+                         <div  className="card">
+                             <div  className="card-body card">
+                                 <h5  className="card-title">{this.props.cardprops.title}</h5>
+                                  <p  className="card-text">{this.props.cardprops.para}</p>
+                                 <div>{this.state.count}</div>
+                                 <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                                <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>       
+             </div>  
+                  
         )
     }
 }
