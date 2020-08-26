@@ -7,7 +7,7 @@ class Button extends Component {
             <div>
             <div className="button-container">
                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                       Launch demo modal
+                      Learn More
                    </button>
                </div>
        </div>

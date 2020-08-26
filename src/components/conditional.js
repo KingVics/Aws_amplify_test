@@ -46,7 +46,7 @@ class Conditional extends  React.Component {
         
     }
 
-    else if(hour > 16) {
+    else if(hour < 17) {
         timefoDay = "Evening"
         style.color = "#0069d7"
         

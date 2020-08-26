@@ -7,9 +7,19 @@
     overflow: hidden;
     font-size: 1rem;
     text-align: center;
+    padding-top: 2rem;
 }
 
 .footer-container p {
     padding: 0;
     margin: 0;
+}
+
+.App-logo,.App-logo2, .App-logo3 {
+    width: 30px; 
+    padding: 5px;  
+}
+
+.App-logo2 img {
+    color: #3b5998;
 }
