@@ -1,0 +1,17 @@
+.style {
+    width: 18rem;
+    float: left;
+    margin: 0 4rem;
+    padding: 0;
+    align-items: center;
+}
+
+.product-container {
+    padding-top: 3rem;
+   
+}
+
+.container-style {
+    background-color: black;
+}
+
