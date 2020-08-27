@@ -1,5 +1,5 @@
 .Nav-container {
-    max-width: 1400px;
+    max-width: 1500px;
     width: 100%;
     overflow: hidden;
 }
@@ -18,6 +18,17 @@
     float: left;
     padding: 20px;
     list-style: none;
+}
+
+.navFloat {
+    position: absolute;
+    right: 1rem;
+    
+}
+
+.navFloat a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .header-container {
@@ -40,4 +51,15 @@ h3 {
 
 .button-container  button{
     margin: 0 auto;
+}
+
+
+.Modal {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-open {
+    padding-right: 0;
 }

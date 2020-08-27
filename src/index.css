@@ -19,3 +19,7 @@ body {
   padding: 5px;
 }
 
+
+.modal-open {
+  padding-right: 0;
+}

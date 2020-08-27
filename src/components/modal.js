@@ -1,10 +1,11 @@
 import React from 'react'
+import './header.css'
 
 
 function Modal() {
 
     return(
-        <div>
+        <div className="Modal">
             <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                  <div className="modal-content">

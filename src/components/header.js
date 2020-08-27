@@ -113,7 +113,7 @@ class Header extends React.Component {
 
             <div>
             <Nav   link = {{
-                home: "Home", product: "Product", service: "Services", about: "About", contact: "Contact Us"
+                home: "Home", product: "Product", service: "Services", about: "About", contact: "Contact Us", signin: "Sign In"
             }} />
               {this.state.isLoading ? 
                 <h3>Loading...</h3> :
