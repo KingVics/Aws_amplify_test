@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/header'
 import Main from './components/main'
 import cards from './components/cards'
+import Form from './components/formContainer'
 import Footer from './components/footer'
 
 
@@ -20,7 +21,7 @@ class App extends Component {
  
      render() {
         const newCard = this.state.card.map(data => <Main cardprops={data}  key={data.link}/> )
-        console.log(newCard)
+        
 
         return (
 
@@ -29,6 +30,7 @@ class App extends Component {
            <Header />
            </div>
            {newCard} 
+           <Form />
            <Footer />
         </div>
 

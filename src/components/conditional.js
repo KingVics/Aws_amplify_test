@@ -14,8 +14,8 @@ class Conditional extends  React.Component {
             username: "Victor",
             isLoggedIn: true,
             log: "",
-            isSignIn: true,
-        
+            isSignIn: true
+            
            
         }
 
@@ -29,8 +29,7 @@ class Conditional extends  React.Component {
 
        
     }
-        
-   
+    
   
 
     render () {
@@ -46,7 +45,7 @@ class Conditional extends  React.Component {
          timefoDay = "Morning"
          style.color = "#fff"
             
-    }  else if(hour >= 12 && hour < 16) {
+    }  else if(hour >= 12 && hour < 17) {
         timefoDay = "Afternoon"
         style.color = "#333"
         

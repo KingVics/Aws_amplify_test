@@ -33,7 +33,8 @@ class Main extends Component {
         super()
 
         this.state = {
-            count: 0
+            count: 0,
+            character: {}
         }
 
         this.onClick = this.onClick.bind(this)
@@ -41,6 +42,19 @@ class Main extends Component {
     }
 
 
+    componentDidMount() {
+        fetch("https://swapi.dev/api/people/1")
+                .then(response => response.json())
+                .then(data => {
+                    this.setState({
+                        character: data
+                    })
+                  
+                })
+    }
+
+    
+     
     
   onClick(e) {
    
@@ -62,29 +76,29 @@ click(e) {
 }
     
 render() {
-        
+    console.log(this.state.character)
         return (
             <div className="container">  
                 <div className="row card-style">
                     <div className="col- col-lg-4">
                          <div  className="card">
                              <div  className="card-body card">
-                                 <h5  className="card-title">{this.props.cardprops.title}</h5>
-                                  <p  className="card-text">{this.props.cardprops.para}</p>
-                                 <div>{this.state.count}</div>
-                                 <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
-                                <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                                 <h5  className="card-title">{this.state.character.name}</h5>
+                                  <p  className="card-text">{this.state.character.gender}</p>
+                                 <div className="image-api"><img src={this.props.cardprops.link}/></div>
+                                 {/* <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a> */}
+                                {/* <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a> */}
                             </div>
                         </div>
                     </div> 
                     <div className="col- col-lg-4">
                          <div  className="card">
                              <div  className="card-body card">
-                                 <h5  className="card-title">{this.props.cardprops.title}</h5>
-                                  <p  className="card-text">{this.props.cardprops.para}</p>
-                                 <div>{this.state.count}</div>
-                                 <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
-                                <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                                 <h5  className="card-title">{this.state.character.name}</h5>
+                                  <p  className="card-text">{this.state.character.gender}</p>
+                                 <div className="image-api"><img src={this.props.cardprops.link}/></div>
+                                 {/* <a href={this.props.cardprops.link} onClick={this.onClick} className="btn btn-primary">{this.props.cardprops.linktitle}</a>
+                                <a href={this.props.cardprops.link} onClick={this.click} className="btn btn-primary">{this.props.cardprops.linktitle}</a> */}
                             </div>
                         </div>
                     </div>
